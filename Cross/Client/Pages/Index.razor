@@ -48,8 +48,8 @@
     protected override async Task OnInitializedAsync()
     {
         hubConnection = new HubConnectionBuilder()
+            //.WithUrl(NavigationManager.ToAbsoluteUri("/dealHub"))
             .WithUrl(NavigationManager.ToAbsoluteUri("/chatHub"))
-            .WithUrl(NavigationManager.ToAbsoluteUri("/dealHub"))
             .Build();
 
         hubConnection.On<string, string>("ReceiveMessage", (user, message) =>
@@ -63,7 +63,7 @@
             cards = newCards;
             StateHasChanged();
         });
-
+        
         await hubConnection.StartAsync();
     }
 

@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29613.14
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cross.Server", "Cross\Server\Cross.Server.csproj", "{CBB411BD-1F35-4046-9A80-41E3F49C5A0F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cross.Server", "Cross\Server\Cross.Server.csproj", "{CBB411BD-1F35-4046-9A80-41E3F49C5A0F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cross.Client", "Cross\Client\Cross.Client.csproj", "{6259F21C-54FC-4F13-AF93-85F249658EA5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cross.Client", "Cross\Client\Cross.Client.csproj", "{6259F21C-54FC-4F13-AF93-85F249658EA5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cross.Shared", "Cross\Shared\Cross.Shared.csproj", "{CF610985-50B9-4C2A-806A-D05838651D83}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cross.Shared", "Cross\Shared\Cross.Shared.csproj", "{CF610985-50B9-4C2A-806A-D05838651D83}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
