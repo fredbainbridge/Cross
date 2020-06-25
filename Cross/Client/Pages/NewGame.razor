@@ -1,28 +1,24 @@
 ﻿@page "/newgame"
 @using Microsoft.AspNetCore.Authorization
-@using Microsoft.AspNetCore.Components.WebAssembly.Authentication
 @using Cross.Shared
 @attribute [Authorize]
 @inject HttpClient Http
 
 <h3>NewGame</h3>
+<EditForm Model="@newGame" OnValidSubmit="HandleValidSubmit">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
 
-<table class="table">
-    <thead>
-        <tr>
-            <th>Hole Cards</th>
-            <th>Ante</th>
-            <th>Drop Time</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td></td>
-        </tr>
-    </tbody>
-</table>
-
+    <InputNumber id="ante" @bind-Value="newGame.Ante" />
+    <InputNumber id="holeCards" @bind-Value="newGame.HoleCards" />
+    <button type="submit">Submit</button>
+</EditForm>
 
 @code {
+    private Game newGame = new Game();
 
+    private void HandleValidSubmit()
+    {
+        Console.WriteLine("OnValidSubmit");
+    }
 }

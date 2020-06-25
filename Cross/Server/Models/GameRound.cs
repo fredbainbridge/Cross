@@ -7,8 +7,8 @@ namespace Cross.Server.Models
 {
     public class GameRound
     {
-        Game Game { get; set; }
-        double PotSize { get; set; }
+        public Game Game { get; set; }
+        public double PotSize { get; set; }
         public int DeckKey { get; set; }
         public string HiddenCard1 { get; set; }
         public string HiddenCard2 { get; set; }
